@@ -1,0 +1,134 @@
+
+body		/* Cette ligne spécifie que le contenu des balises suivantes s'appliquera au contenu des balises <body> de notre page HTML */ 
+{			/* Cette balise ouvrante délimite le début du code */
+   background-color:#306090;		/* Cette ligne définit la couleur de l'arrière-plan du contenu des balises <body>. Le code couleur est ici donné en "hexadécimal". Ce nombre spécifique définit une teinte de bleu */
+   color:#ffffff;		/* Cette ligne définit ici la couleur de la police (toujours en hexadécimal). */
+   font-family:"Trebuchet MS",Verdana,Geneva,Arial,Helvetica,sans-serif;		/* Font-family définit ici la police par défaut du contenu de la balise <body> ainsi que les "polices de secours" si l'utilisateur accédant à la page n'a pas accès à la police par défaut. */
+   font-size:small;		/* font-size définit la taille de la police. Ici, small la définit sur "petit" */
+   margin:2em 1%;		/* margin définit la taille de la boîte de marge du bloc <body> */
+   padding:0;		/* padding définit la taille de la boîte de remplissage du bloc <body> et fonctionne de la même manière que "margin" */
+}		/* Cette parenthèse clos ici l'entrée des instructions */
+
+header		/* la suite des instructions concernera le bloc <header> */
+{		/* ouverture de l'entrée des commandes pour le bloc <header> */
+	margin:2em 3% 1% 3%;		/* détermine la taille de la boîte de marge */
+	padding:0.05em 0 0.05em 0;		/* détermine la taille de la boîte de remplissage */
+	font-size:200%;		/* détermine la taille de police du bloc */
+	background-color:#ffd000;		/* détermine la couleur de l'arrière-plan du bloc */
+	border-radius:25px;		/* border-radius définit l'arondissement des coins du bloc "header */
+	border: 2px solid #3B3B3B;/* Cette commande a pour utilité d'attribuer à la bordure de l'en-tête une épaisseur de 2 pixels et en détermine la couleur */
+}		/* fermeture de l'entrée des commandes du bloc <header> */
+
+header h1		/* le code qui suit concernera uniquement la mise en forme de h1 dans le bloc header */
+{		/* ouverture de l'entrée des commandes du bloc <header> formaté en "titre 1" */
+	font-family:"Comic Sans MS", Arial, Helvetica, sans-serif;		/* Cette commande a pour fonction de déterminer la police par défaut du bloc ainsi que ses polices de secours */
+	text-align:center;		/* Cette commande a pour fonction de centrer le contenu du bloc */
+}		/* fermeture de l'entrée des commandes du bloc <header> formaté en "titre 1" */
+
+header .logo		/* La suite du code désignera la classe comprise dans l'en-tête */
+{		/* ouverture de l'entrée des commandes */
+	float:left;			/* la classe logo interne au bloc header est retirée du flux d'informations et "flotte" à gauche du bloc */
+	margin-top:20px;		/* la marge extérieure du haut de la classe logo interne à l'en-tête est définie à 20 pixels */
+	margin-bottom:5px;		/* la marge extérieure du bas de la classe logo interne à l'en-tête est définie à 20 pixels */
+	margin-left:1%;		/* la marge extérieure à gauche de la classe logo interne à l'en-tête est définie à 20 pixels */
+	display:block;		/* le contenu de la classe logo est considéré comme un bloc, et non comme du contenu inline */
+	border: 2px solid;		/* la bordure de la classe logo est paramétrée à 2 pixels */
+	border-radius: 25px;		/* les coins de la bordure le la classe logo sont arrondis */
+	padding: 5px;		/* les marges intérieures de la classe logo sont estimées à 5 pixels */
+	background-color: #E0B700;		/* Détermine la couleur d'arrière plan en hexadécimal */
+}		/* fermeture de l'entrée des commandes */
+
+#page		/* La suite des instruction concernera "page"*/
+{		/* ouverture de l'entrée des commandes */
+   color:#000000;		/* Détermine la couleur de la police pour "page" */
+   background-color:#ffffff;		/* Détermine la couleur de l'arrière plan de "page" */
+   border:3px solid #000000;		/* Détermine l'épaisseur des bordures encadrant "page" */
+   min-height:55em;		/* Détermine la hauteur minimum de "page"*/
+   height:55em;			/* Détermine la hauteur du bloc de contenu */ 
+}		/* fermeture de l'entrée des commandes */
+
+article			/* le code suivant désignera les blocs "article" */
+{		/* ouverture de l'entrée des commandes */
+	margin-left:100px;		/* la marge extérieure des blocs article sont paramétrées à 100 pixels */
+	border:1px solid #3B3B3B;		/* détermine la largeur de bordure à 1 pixel ainsi que sa couleur en hexadécimal */
+	line-height:150%;		/* détermine l'espace entre les lignes */
+	margin:0 3% 2em 21%;		/* détermine la marge extérieure du bloc sur 0 (celle du haut), 3% (celle de droite), 3em (celle du bas), et 2% (celle de gauche) */
+	padding:0 2% 3em 2%;		/* détermine la marge intérne au bloc article sur 0 (celle du haut), 2% (celle de droite), 3em (celle du bas) et 2% (celle de gauche) */
+	color:#3B3B3B;		/* détermine la couleur de la police en hexadécimal */
+	background-color:#E3E3E3;		/* détermine la couleur du fond d'écran en hexadécimal */
+}		/* fermeture de l'entrée des commandes */
+
+nav		/* le code suivant désignera les blocs nav */
+{		/* ouverture de l'entrée des commandes */
+	left:5%;		/* détermine la position du bord gauche de la marge de nav par rapport à son bloc parent sur 5% */
+	position:absolute;		/*Positionne de façon absolue "nav" à son plus proche bloc parent */
+	width:15%;			/* Spécifie la longueur de la zone de contenu */
+	overflow:hidden;		/* Tout le contenu dépassant du bloc nav est caché */
+	background-color: #E3E3E3;		/* Détermine la couleur de l'arrière-plan en hexadécimal */
+	color: #3B3B3B;			/* Détermine la couleur de police en hexadécimal */
+	border: 1px solid #3B3B3B		/* Détermine l'épaisseur de bordure à 1 pixel et sa couleur en hexadécimal */
+}		/* fermeture de l'entrée des commandes */
+
+h2		/* Le code suivant désignera les titre de niveau 2 */
+{		/* ouverture de l'entrée des commandes */
+	font-weight: bold;		/* met en gras le texte des titres de niveau 2 */
+}		/* fermeture de l'entrée des commandes */
+
+nav h2		/* Le code suivant désignera les titres de niveau 2 internes aux blocs nav */
+{		/* ouverture de l'entrée des commandes */
+	border-color: #090000;		/* détermine la couleur de la vordure en hexadécimal */
+	border-style: solid;		/* La bordure de l'élément concerné est une ligne continue */
+	border-width: 0 0 3px 0;		/* détermine la zone de contenu de l'élément concerné */
+	font-size: medium;			/* Paramètre la taille de la police sur "moyen" */
+	font-weight: 700;		/*  détermine l'épaisseur du texte mis en gras */
+	margin: 0;			/* Supprime les marges externes de l'élément concerné */
+	padding-left: 0em;		/* Supprime les marges internes de l'élément concerné */
+	text-transform: uppercase;		/* Le texte des titres de niveau 2 internes aux blocs nav sont automatiquement en majuscule */
+}		 	/* fermeture de l'entrée des commandes */
+
+h2:first-letter 		/* Le code qui suit désignera la première lettre des titre de niveau 2 */
+{		/* ouverture de l'entrée des commandes */
+	color:#9E1212;		/* détermine la couleur de la police en hexadécimal */
+	font-weight:bold;		/* met le texte de l'élément concerné en gras */
+}		/* fermeture de l'entrée des commandes */
+
+article h2		/* le code qui suit désignera les titres de niveau 2 à l'intérieur des blocs article */
+{		/* ouverture de l'entrée des commandes */
+	border: 2px solid #3B3B3B;		/* détermine la couleur des bordures en hexadécimal */
+	padding-left: 10px;			/* détermine la marge intérieure gauche sur 10 pixels */
+	border-radius: 20px;		/* arrondit les coins de la bordure */
+}		/* fermeture de l'entrée des commandes */
+
+
+nav h2:first-letter		/* le code qui suit désignera la première lettre des titres de niveau 2 à l'intérieur des nav */
+{		/* ouverture de l'entrée des commandes */
+	color: #9E1212;		/* détermine la couleur de la police de l'élément concerné en hexadécimal */
+}		/* fermeture de l'entrée des commandes */
+
+ul		/* le code qui suit désignera les listes non ordonnées */
+{		/* ouverture de l'entrée des commandes */
+	margin-bottom:1.5em;		/* détermine la marge externe du bas sur 1,5 em */
+	margin-top:0.5em;		/* détermine la marge externe du haut sur 0,5 em */
+}		/* fermeture de l'entrée des commandes */
+
+li		/* le code qui suit désignera les items de liste */
+{		/* ouverture de l'entrée des commandes */
+	list-style:none;		/* supprime la mise en forme par défaut appliquée aux items de liste */
+}		/* fermeture de l'entrée des commandes */
+
+nav a		/* le code qui suit désignera les hyperliens */
+{		/* ouverture de l'entrée des commandes */
+	display:block;		/* le contenu de l'élément concerné est considéré comme un bloc */
+	text-decoration:none;		/* la mise en forme par défaut des hyperliens est supprimée */
+	color:#3B3B3B			/* détermine la couleur de la police de l'élément concerné en hexadécimal */
+}		/* fermeture de l'entrée des commandes */
+
+nav a:hover			/* le code qui suit concernera les liens hypertexte survolés par notre pointeur */
+{		/* ouverture de l'entrée des commandes */
+	background-color: #CDCDCD;		/* détermine la couleur de l'arrière-plan lorsque l'on survole un lien hypertexte avec notre pointeur */
+}		/* fermeture de l'entrée des commandes */
+
+html>body #page			
+{		/* ouverture de l'entrée des commandes du bloc <html> */
+   height:auto;			/* ici, l'utilisation de "auto" pour la configuration de height assure que la hauteur sera automatiquement modifiée afin que le contenu soit affiché correctement */
+}		/* fermeture de l'entrée des commandes du bloc <html> */
